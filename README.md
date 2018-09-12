@@ -1,5 +1,7 @@
 # spring-boot-starter-fastjson
 
+### 基于fastjson-1.2.49和springboot-1.5.14.RELEASE
+
 ### 配置示例
 ```yaml
 spring:
