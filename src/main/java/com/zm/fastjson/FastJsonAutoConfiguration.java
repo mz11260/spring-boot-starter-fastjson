@@ -42,7 +42,7 @@ import java.util.List;
 public class FastJsonAutoConfiguration {
 
     @Configuration
-    @ConditionalOnClass({com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter.class})
+    @ConditionalOnClass({FastJsonHttpMessageConverter.class})
     @ConditionalOnProperty(prefix = "spring.fastjson", name = "enabled", havingValue = "true", matchIfMissing = true)
     @EnableConfigurationProperties(FastJsonProperties.class)
     public static class FastJson2HttpMessageConverterConfiguration {
