@@ -20,11 +20,10 @@ import java.util.Map;
 @ConfigurationProperties(prefix = "spring.fastjson")
 @ConditionalOnClass({FastJsonHttpMessageConverter.class})
 public class FastJsonProperties {
-    private final static String DEFAULT_MEDIA_TYPE = MediaType.APPLICATION_JSON_UTF8_VALUE;
 
     private boolean enabled;
 
-    private List<MediaType> supportedMediaTypes = MediaType.parseMediaTypes(DEFAULT_MEDIA_TYPE);
+    private List<MediaType> supportedMediaTypes = MediaType.parseMediaTypes(MediaType.APPLICATION_JSON_UTF8_VALUE);
 
     private Config config = new Config();
 
